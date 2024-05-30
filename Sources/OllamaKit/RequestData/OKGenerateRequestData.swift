@@ -35,4 +35,11 @@ public struct OKGenerateRequestData: Encodable {
         self.prompt = prompt
         self.images = images
     }
+    
+    public init(stream:Bool, model: String, prompt: String, images: [String] = []) {
+        self.stream = stream
+        self.model = model
+        self.prompt = prompt
+        self.images = images
+    }
 }
